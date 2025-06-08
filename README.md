@@ -1,6 +1,7 @@
 # Calculator
 Repositório para a realização das atividades práticas do curso de Ciência da Computação - Programação de computadores
-Sidney André de Araújo Barbosa, Jhonas de Holanda Luís
-P1 - MANHÃ
-teste 1
+Sidney André de Araújo Barbosa, Jhonas de Holanda Rodrigues
+P1 - MANHÃ - Turma B 
+
+
 
