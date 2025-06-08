@@ -1,27 +1,28 @@
+def tabuada(num1, num_final, operacao):
+    if operacao == 1:
+        return num1 + num_final
+    elif operacao == 2:
+        return num1 - num_final
+    elif operacao == 3:
+        return num1 * num_final
+    elif operacao == 4:
+        return num1 / num_final
 
 while True:
     print("Escolha a sua operação matemática")
-    print("1- soma\n 2- subtração\n 3- multiplicação\n 4- divisão\n 5- sair")
-    Operacao = int(input("digite sua operação escolhida: "))
-    if Operacao == 5:
+    print("1- soma\n2- subtração\n3- multiplicação\n4- divisão\n5- sair")
+    operacao = int(input("Digite sua operação escolhida: "))
+    
+    if operacao == 5:
         break
+    elif operacao not in [1, 2, 3, 4]:
+        print("Operação inválida! Tente novamente.")
+        continue
     
+    num1 = float(input("Digite o primeiro número: "))
+    num_final = float(input("Digite o segundo número: "))
     
-    def tabuada(num1, num_final):
-        
-
-
-   
-        if Operacao == 1:
-            print(F"o resutado da soma entre {num1} + {num_final} ={tabuada(num1,num_final)}")
-            
-        elif Operacao == 2:
-            print(f"o resultado da subtração entre {num1} - {num_final} = {num1 - num_final}")
-        
-        elif Operacao == 3:
-            print(f"o resultado da multiplicação entre {num1} x {num_final} = {num1 * num_final}")
-        
-        elif Operacao == 4:
-            print(f"O resultado da divisão entre {num1} / {num_final} = {num1/num_final}")
-        
-        
+    resultado = tabuada(num1, num_final, operacao)
+    
+    operacoes = ["soma", "subtração", "multiplicação", "divisão"]
+    print(f"O resultado da {operacoes[operacao-1]} entre {num1} e {num_final} = {resultado}")
