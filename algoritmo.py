@@ -1,19 +1,24 @@
-print(" 1 - soma"
-" 2 - subtração"
-" 3 - multiplicação"
-" 4 - divisão")
-tipo_Calc =int(input("digite o tipo de operação que você deseja: "))
-valor_calc = int(input("digite o número que você deseja ver a tabuada: "))
-valor_final = int(input("até qual número você deseja que seja operado?: "))
-for i in range (valor_final + 1):
-    if tipo_Calc == 1: 
-        print (f"{valor_calc} + {i} = {valor_calc + i}")
-        print("______________________________")
-    elif tipo_Calc == 2:
-        print (f"{valor_calc} - {i} = {valor_calc - i}")
-        print("______________________________")
-    elif  tipo_Calc == 3:
-        print (f"{valor_calc} x {i} = {valor_calc * i}")
-    else:
-        tipo_Calc == 4
-        print (f"{valor_calc} / {i} = {valor_calc // i}") 
+while True:
+    print("Escolha a sua operação matemática")
+    print("1- soma\n 2- subtração\n 3- multiplicação\n 4- divisão\n 5- sair")
+    Operacao = int(input("digite sua operação escolhida: "))
+    if Operacao == 5:
+        break
+    
+    
+    def tabuada(num1, num_final):
+        
+
+
+   
+        if Operacao == 1:
+            print(F"o resutado da soma entre {num1} + {num_final} ={tabuada(num1,num_final)}")
+            
+        elif Operacao == 2:
+            print(f"o resultado da subtração entre {num1} - {num_final} = {num1 - num_final}")
+        
+        elif Operacao == 3:
+            print(f"o resultado da multiplicação entre {num1} x {num_final} = {num1 * num_final}")
+        
+        elif Operacao == 4:
+            print(f"O resultado da divisão entre {num1} / {num_final} = {num1/num_final}")
